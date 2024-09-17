@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --headingColors: #2c806f;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--headingColors);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+fieldset {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 98%;
+  padding: 10px;
+  margin-left: 5px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  margin: 20px 211px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  border-radius: 5px;
+  width: max-content;
+  cursor: pointer;
+  font-weight: 700;
+}
+hr {
+  background-color: var(--headingColors);
+}
+
+#resume-container {
+  display: none;
+  max-width: 1000px;
+  height: auto;
+  margin: 50px auto;
+  padding: 20px 60px;
+}
+.Personal_Information {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  height: 200px;
+}
+.info {
+  height: 100px;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--headingColors);
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: var(--headingColors);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.experince ul {
+  padding: 20px;
+}
+.seperator {
+  height: 2px;
+  background-color: var(--headingColors);
+  margin: 20px auto;
+  max-width: 700px;
+}
+.skill-btn {
+  margin-top: 20px;
+  margin-left: 370px;
+  width: fit-content;
+  padding: 5px;
+  background-color: var(--headingColors);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0px 10px;
+  width: fit-content;
+  padding: 5px;
+  background-color: var(--headingColors);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  button {
+    margin: 10px 0;
+  }
+  .info {
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  .summary {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .Personal_Information {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: larger;
+  }
+  .btn-container {
+    display: block;
+  }
+  a {
+    display: block;
+    margin-right: 30px;
+    margin-top: 10px;
+  }
+}
