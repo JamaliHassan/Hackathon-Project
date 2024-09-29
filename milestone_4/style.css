@@ -67,6 +67,7 @@ hr {
 }
 
 #resume-container {
+  display: none;
   max-width: 1000px;
   height: auto;
   margin: 50px auto;

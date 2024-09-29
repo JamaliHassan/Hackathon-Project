@@ -36,8 +36,6 @@ resumeForm.addEventListener("submit", function (event) {
 var editButton = document.getElementById("editbtn");
 editButton.addEventListener("click", function () {
     var editableElements = document.querySelectorAll('[contenteditable="false"]');
-    console.log(editableElements);
-    console.log(editableElements);
     editableElements.forEach(function (el) {
         el.contentEditable = el.contentEditable === "true" ? "false" : "true";
     });

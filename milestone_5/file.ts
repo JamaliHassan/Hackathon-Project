@@ -38,7 +38,6 @@ resumeForm.addEventListener("submit", function (event: Event) {
   const displayEducation = document.getElementById(
     "display-education"
   ) as HTMLElement;
-
   displayName.innerText = name;
   displayInfo.innerText = `${address} | ${contact} | ${email}`;
   displayCareerObjective.innerText = CareerObjective;
@@ -49,6 +48,7 @@ resumeForm.addEventListener("submit", function (event: Event) {
   document.getElementById("resume-container")!.style.display = "block";
   // Hide the form once the resume is generated
   resumeForm.style.display = "none";
+  document.getElementById("btn-container")!.style.display = "flex";
 });
 
 // create resume editable
@@ -57,9 +57,6 @@ editButton.addEventListener("click", () => {
   const editableElements = document.querySelectorAll(
     '[contenteditable="false"]'
   ) as NodeListOf<HTMLElement>;
-  console.log(editableElements);
-
-  console.log(editableElements);
 
   editableElements.forEach((el) => {
     el.contentEditable = el.contentEditable === "true" ? "false" : "true";
@@ -69,12 +66,18 @@ editButton.addEventListener("click", () => {
     editButton.innerText === "Edit Resume" ? "Lock Resume" : "Edit Resume";
 });
 
+const buttonContainer = document.getElementById(
+  "btn-container"
+) as HTMLButtonElement;
+
 // create resume download in pdf form
 const downloadButton = document.getElementById(
   "downloadbtn"
 ) as HTMLButtonElement;
 
 downloadButton.addEventListener("click", () => {
+  buttonContainer.style.display = "none";
+  resumeForm.style.display = "none";
   window.print();
 });
 
@@ -86,5 +89,3 @@ const unique = `${baseUrl}/#${encodeURIComponent(username)}`;
 const shareLink = document.getElementById("shareAbleLink") as HTMLAnchorElement;
 shareLink.href = unique;
 shareLink.innerText = unique;
-console.log(unique);
-console.log(username);

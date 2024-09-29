@@ -57,10 +57,7 @@ editButton.addEventListener("click", () => {
   const editableElements = document.querySelectorAll(
     '[contenteditable="false"]'
   ) as NodeListOf<HTMLElement>;
-  console.log(editableElements);
-
-  console.log(editableElements);
-
+  
   editableElements.forEach((el) => {
     el.contentEditable = el.contentEditable === "true" ? "false" : "true";
   });

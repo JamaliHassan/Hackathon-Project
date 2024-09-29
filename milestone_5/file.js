@@ -31,31 +31,31 @@ resumeForm.addEventListener("submit", function (event) {
     document.getElementById("resume-container").style.display = "block";
     // Hide the form once the resume is generated
     resumeForm.style.display = "none";
+    document.getElementById('btn-container').style.display = 'flex';
 });
 // create resume editable
 var editButton = document.getElementById("editbtn");
 editButton.addEventListener("click", function () {
     var editableElements = document.querySelectorAll('[contenteditable="false"]');
-    console.log(editableElements);
-    console.log(editableElements);
     editableElements.forEach(function (el) {
         el.contentEditable = el.contentEditable === "true" ? "false" : "true";
     });
     editButton.innerText =
         editButton.innerText === "Edit Resume" ? "Lock Resume" : "Edit Resume";
 });
-// create resume download in pdf form 
+var buttonContainer = document.getElementById("btn-container");
+// create resume download in pdf form
 var downloadButton = document.getElementById("downloadbtn");
 downloadButton.addEventListener("click", function () {
+    buttonContainer.style.display = "none";
+    resumeForm.style.display = "none";
     window.print();
 });
+// create username based url
 var Name = document.getElementById("display-name");
-// creating username based url
 var username = Name.innerHTML.trim();
 var baseUrl = window.location.origin;
 var unique = "".concat(baseUrl, "/#").concat(encodeURIComponent(username));
 var shareLink = document.getElementById("shareAbleLink");
 shareLink.href = unique;
 shareLink.innerText = unique;
-console.log(unique);
-console.log(username);

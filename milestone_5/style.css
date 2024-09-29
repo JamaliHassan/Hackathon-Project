@@ -67,6 +67,7 @@ hr {
 }
 
 #resume-container {
+  display: none;
   max-width: 1000px;
   height: auto;
   margin: 50px auto;
@@ -132,7 +133,9 @@ p {
 
 .btn-container {
   display: flex;
+  display: none;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .btn {
