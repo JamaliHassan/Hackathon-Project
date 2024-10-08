@@ -31,7 +31,7 @@ resumeForm.addEventListener("submit", function (event) {
     document.getElementById("resume-container").style.display = "block";
     // Hide the form once the resume is generated
     resumeForm.style.display = "none";
-    document.getElementById('btn-container').style.display = 'flex';
+    document.getElementById("btn-container").style.display = "flex";
 });
 // create resume editable
 var editButton = document.getElementById("editbtn");
