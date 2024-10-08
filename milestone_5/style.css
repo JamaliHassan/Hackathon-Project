@@ -172,8 +172,14 @@ p {
   h1 {
     font-size: larger;
   }
+  .btn{
+    margin-bottom: 20px;
+  }
   .btn-container {
     display: block;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 10px;
   }
   a {
     display: block;
