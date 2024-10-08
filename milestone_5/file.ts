@@ -19,6 +19,8 @@ resumeForm.addEventListener("submit", function (event: Event) {
   ).value;
   const skills = (document.getElementById("skills") as HTMLTextAreaElement)
     .value;
+    console.log('buddd');
+    
   const education = (
     document.getElementById("education") as HTMLTextAreaElement
   ).value;
